@@ -1,0 +1,69 @@
+﻿@model DeveloperGlossary.Models.GlossaryLanguageViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Developer Glossary</h1>
+<p>A glossary of Terms and Keywords for all languages</p>
+
+<form asp-controller="Glossaries" asp-action="Index">
+    <p>
+        <select asp-for="glossaryLanguage" asp-items="Model.languages">
+            <option value="">All</option>
+        </select>
+
+        Filter by Term: <input type="text" name="SearchString">
+        <input class="button btn" type="submit" value="Filter" />
+
+        <a class="btn button" style="color:black" asp-action="Create">Create New</a>
+    </p>
+</form>
+
+
+
+
+<table class="center table-responsive table-hover table-bordered">
+    <thead>
+        <tr style="background-color:#324E42;color:white;font-size:medium">
+                <th class="column">
+                    @Html.DisplayNameFor(model => model.glossary[0].Term)
+                </th>
+                <th class="column">
+                    @Html.DisplayNameFor(model => model.glossary[0].Language)
+                </th>
+                <th class="column">
+                    @Html.DisplayNameFor(model => model.glossary[0].Syntax)
+                </th>
+                <th class="column">
+                    @Html.DisplayNameFor(model => model.glossary[0].Definition)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.glossary) {
+        <tr>
+            <td class="column">
+                @Html.DisplayFor(modelItem => item.Term)
+            </td>
+            <td class="column">
+                @Html.DisplayFor(modelItem => item.Language)
+            </td>
+            <td class="column">
+                @Html.DisplayFor(modelItem => item.Syntax)
+            </td>
+            <td class="column">
+                <div style="width: 1080px; word-wrap: break-word">
+                    @Html.DisplayFor(modelItem => item.Definition)
+                </div>
+            </td>
+            <td class="crud-column column">
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a><br />
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a><br /> 
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

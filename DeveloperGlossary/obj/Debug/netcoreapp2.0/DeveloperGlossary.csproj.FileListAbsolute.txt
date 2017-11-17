@@ -1,0 +1,11 @@
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\bin\Debug\netcoreapp2.0\DeveloperGlossary.deps.json
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\bin\Debug\netcoreapp2.0\DeveloperGlossary.runtimeconfig.json
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\bin\Debug\netcoreapp2.0\DeveloperGlossary.runtimeconfig.dev.json
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\bin\Debug\netcoreapp2.0\DeveloperGlossary.dll
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\obj\Debug\netcoreapp2.0\DeveloperGlossary.csprojResolveAssemblyReference.cache
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\obj\Debug\netcoreapp2.0\DeveloperGlossary.csproj.CoreCompileInputs.cache
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\obj\Debug\netcoreapp2.0\DeveloperGlossary.AssemblyInfoInputs.cache
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\obj\Debug\netcoreapp2.0\DeveloperGlossary.AssemblyInfo.cs
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\bin\Debug\netcoreapp2.0\DeveloperGlossary.pdb
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\obj\Debug\netcoreapp2.0\DeveloperGlossary.dll
+C:\Users\lydia.gray\source\repos\DeveloperGlossary\DeveloperGlossary\obj\Debug\netcoreapp2.0\DeveloperGlossary.pdb

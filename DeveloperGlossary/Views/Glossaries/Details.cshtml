@@ -1,0 +1,41 @@
+﻿@model DeveloperGlossary.Models.Glossary
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <hr />
+    <dl>
+        <dt style="text-decoration-line:underline">
+            @Html.DisplayNameFor(model => model.Term)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Term)
+        </dd>
+        <dt style="text-decoration-line:underline">
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+        <dt style="text-decoration-line:underline">
+            @Html.DisplayNameFor(model => model.Syntax)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Syntax)
+        </dd>
+        <dt style="text-decoration-line:underline">
+            @Html.DisplayNameFor(model => model.Definition)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Definition)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,44 @@
+﻿@model DeveloperGlossary.Models.Glossary
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <dl>
+        <dt style="text-decoration-line:underline">
+            @Html.DisplayNameFor(model => model.Term)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Term)
+        </dd>
+        <dt style="text-decoration-line:underline">
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+        <dt style="text-decoration-line:underline">
+            @Html.DisplayNameFor(model => model.Syntax)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Syntax)
+        </dd>
+        <dt style="text-decoration-line:underline">
+            @Html.DisplayNameFor(model => model.Definition)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Definition)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
